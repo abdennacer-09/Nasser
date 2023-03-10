@@ -308,7 +308,7 @@ a:not([href]):not([tabindex]) {
 }
 
 .art-app ::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 
 .art-ls-divider {
@@ -895,6 +895,23 @@ h6{
 .art-a {
     -webkit-transition: .55s ease-in-out;
     transition: .55s ease-in-out;
+}
+
+.items-works{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-work{
+    margin-bottom: 35px;
+    background-color: #2b2b36;
+    margin-right: 16px;
+    width: 31%;
+    padding: 12px;
+}
+
+.item-work .content-work{
+    padding: 10px;
 }
 
 .art-service-icon-box{
