@@ -13,6 +13,21 @@ function openMenu(){
     }
 }
 
+function sendEmail2() {
+    let email = document.getElementById("email").value;
+    let file = document.getElementById("file").files[0];
+    Email.send({
+      SecureToken: "b6cc2000-80d5-4e15-8dea-2b39d8c5d8cb",
+      To: email,
+      From: "homo8182@gmail.com",
+      Subject: "message",
+      Body: 'here is your file',
+      Attachments: [file],
+    }).then(
+      message => alert(message)
+    );
+}
+
 function sendEmail(){
     Email.send({
         Host : "smtp.elasticemail.com",
